@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  app:
+    image: ke20/composer
+    volumes:
+      - '.:/app'
+    command: bin/console server:run --docroot=/app/public/ 0.0.0.0:8000
+    ports:
+      - '80:8000'
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10.3
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=rocket
+      - MYSQL_USER=rocket
+      - MYSQL_PASSWORD=123456789
+    ports:
+      - '3106:3306'
