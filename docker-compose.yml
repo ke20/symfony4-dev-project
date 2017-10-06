@@ -2,14 +2,17 @@ version: '3'
 
 services:
   app:
-    image: ke20/composer
+    build:
+      context: .
+      dockerfile: ./docker/app/Dockerfile
     volumes:
       - '.:/app'
     command: bin/console server:run --docroot=/app/public/ 0.0.0.0:8000
     ports:
-      - '80:8000'
+      - '8001:8000'
     depends_on:
       - db
+    user: app
 
   db:
     image: mariadb:10.3

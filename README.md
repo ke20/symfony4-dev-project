@@ -15,4 +15,16 @@ $ docker-compose run --rm app composer install
 $ docker-compose up -d
 ```
 
-And go to [http://localhost](http://localhost)
+And go to [http://localhost:8001](http://localhost:8001)
+
+# Some useful commands
+
+Run composer command :
+```
+$ docker-compose exec app composer [options][command]
+```
+
+Run symfony command :
+```
+$ docker-compose exec app bin/console [options][command]
+```
