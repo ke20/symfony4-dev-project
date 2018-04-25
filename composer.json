@@ -1,4 +1,6 @@
 {
+    "name": "ke20/symfony4-dev-project",
+    "description": "Base for a Symfony 4 project",
     "type": "project",
     "license": "proprietary",
     "require": {
@@ -6,11 +8,11 @@
         "symfony/console": "^3.3",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^3.3",
-        "symfony/web-server-bundle": "^3.3",
         "symfony/yaml": "^3.3"
     },
     "require-dev": {
-        "symfony/dotenv": "^3.3"
+        "symfony/dotenv": "^3.3",
+        "symfony/phpunit-bridge": "^3.3"
     },
     "config": {
         "preferred-install": {
