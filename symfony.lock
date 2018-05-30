@@ -14,9 +14,6 @@
     "symfony/cache": {
         "version": "v3.3.9"
     },
-    "symfony/class-loader": {
-        "version": "v3.3.9"
-    },
     "symfony/config": {
         "version": "v3.3.10"
     },
