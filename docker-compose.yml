@@ -20,7 +20,8 @@ services:
     volumes:
       - ".:/opt/app"
     env_file:
-      - './.env'
+      - './.env.dist'
+      - './.env.dev'
     depends_on:
       - db
 
@@ -29,7 +30,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=app
-      - MYSQL_USER=app
+      - MYSQL_USER=user
       - MYSQL_PASSWORD=123456789
     ports:
       - '3336:3306'
@@ -46,7 +47,7 @@ services:
     environment:
       - PMA_HOST=db
       - PMA_PORT=3306
-      - PMA_USER=app
+      - PMA_USER=user
       - PMA_PASSWORD=123456789
     depends_on:
       - db

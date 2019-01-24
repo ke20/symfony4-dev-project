@@ -1,4 +1,4 @@
-FROM nginx:1.14-alpine
+FROM nginx:1.15-alpine
 
 # Configure timezone
 RUN apk add --update && \

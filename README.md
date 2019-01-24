@@ -9,8 +9,8 @@ This project requires [docker](https://www.docker.com/) and [docker-compose](htt
 # Get started
 
 ```
-$ git clone https://github.com/ke20/symfony4-dev-project
-$ cd symfony4-dev-project
+$ git clone https://github.com/ke20/symfony4-dev-project my-project
+$ cd my-project
 $ docker-compose run --rm php composer install
 $ docker-compose up -d
 ```
