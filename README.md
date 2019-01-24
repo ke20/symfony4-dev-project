@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ke20/symfony4-dev-project.svg?branch=master)](https://travis-ci.org/ke20/symfony4-dev-project)
+
 # What ?
 
 This is a little base project to start new project with Symfony 4.
